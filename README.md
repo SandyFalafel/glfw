@@ -206,6 +206,8 @@ information on what to include when reporting a bug.
  - [Cocoa] Bugfix: The install name of the installed dylib was relative (#1504)
  - [Cocoa] Bugfix: The MoltenVK layer contents scale was updated only after
    related events were emitted
+ - [Cocoa] Bugfix: Moving the cursor programmatically would freeze it for
+   a fraction of a second (#1962)
  - [X11] Bugfix: The CMake files did not check for the XInput headers (#1480)
  - [X11] Bugfix: Key names were not updated when the keyboard layout changed
    (#1462,#1528)
@@ -246,6 +248,7 @@ information on what to include when reporting a bug.
    (#1798)
  - [Wayland] Bugfix: Monitors physical size could report zero (#1784,#1792)
  - [Wayland] Bugfix: Some keys were not repeating in Wayland (#1908)
+ - [Wayland] Bugfix: Non-arrow cursors are offset from the hotspot (#1706,#1899)
  - [POSIX] Removed use of deprecated function `gettimeofday`
  - [POSIX] Bugfix: `CLOCK_MONOTONIC` was not correctly tested for or enabled
  - [NSGL] Removed enforcement of forward-compatible flag for core contexts
@@ -298,6 +301,7 @@ skills.
  - Denis Bernard
  - Doug Binks
  - blanco
+ - Waris Boonyasiriwat
  - Kyle Brenneman
  - Rok Breulj
  - Kai Burjack
@@ -306,6 +310,7 @@ skills.
  - David Carlier
  - Arturo Castro
  - Chi-kwan Chan
+ - Joseph Chua
  - Ian Clarkson
  - Michał Cichoń
  - Lambert Clara
@@ -481,7 +486,6 @@ skills.
  - Torsten Walluhn
  - Patrick Walton
  - Xo Wang
- - Waris
  - Jay Weisskopf
  - Frank Wille
  - Andy Williams
